@@ -3,6 +3,7 @@ package builder;
 import java.util.ArrayList;
 import java.util.List;
 
+import builder.i524.FuscaBuilder;
 import builder.profa.KaBuilder;
 
 public class Main {
@@ -12,6 +13,9 @@ public class Main {
 			// ->
 			outputMsg ( new CarDealershipDirector(new KaBuilder()) );
 			// <-
+			
+			// -> 524 example
+			outputMsg ( new CarDealershipDirector(new FuscaBuilder()) );
 			
 		}
 	
