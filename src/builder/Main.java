@@ -6,6 +6,7 @@ import java.util.List;
 import builder.i514.CeltaBuilder;
 import builder.i524.FerrariBuilder;
 import builder.i524.FuscaBuilder;
+import builder.i524.TeslaXBuilder;
 import builder.profa.KaBuilder;
 
 public class Main {
@@ -21,13 +22,11 @@ public class Main {
   
 		// -> 524 example
 		outputMsg ( new CarDealershipDirector(new FuscaBuilder()) );
-		
-		// -> Ferrari
-		outputMsg (new CarDealershipDirector(new FerrariBuilder()) );
-  
+		outputMsg ( new CarDealershipDirector(new TeslaXBuilder()) );
+		outputMsg ( new CarDealershipDirector(new FerrariBuilder()) );
 	}
 	
-	private static void outputMsg(CarDealershipDirector carDealership) {
+private static void outputMsg(CarDealershipDirector carDealership) {
 		
 		carDealership.buildCar();
 		CarProduct car = carDealership.getCar();
